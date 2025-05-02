@@ -40,7 +40,7 @@ class RewardsScreen extends StatelessWidget {
               ),
               SizedBox(height: 20),
 
-              // Avatar & Wallpaper purchase section
+              // Fitness House & SportVision offer section
               Container(
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
@@ -51,22 +51,23 @@ class RewardsScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      'Buy Avatars and Wallpapers with StepCoins',
+                      '15% discount at Fitness House and a free gift from Sport Vision',
                       style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.center,
                     ),
                     SizedBox(height: 10),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         PurchaseItem(
-                          itemName: 'Avatar',
+                          itemName: 'Fitness House',
                           itemPrice: '50 StepCoins',
-                          icon: Icons.account_circle,
+                          icon: Icons.fitness_center,
                         ),
                         PurchaseItem(
-                          itemName: 'Wallpaper',
+                          itemName: 'SportVision',
                           itemPrice: '30 StepCoins',
-                          icon: Icons.image,
+                          icon: Icons.card_giftcard,
                         ),
                       ],
                     ),
